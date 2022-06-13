@@ -8,4 +8,4 @@
 - name: ensure prometheus node exporter active
   ansible.builtin.service:
     name: prometheus-node-exporter
-    enabled: yes
+    enabled: true
