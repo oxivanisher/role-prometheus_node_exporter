@@ -1,11 +1,11 @@
 ---
 
-- name: ensure prometheus node exporter package
+- name: Ensure prometheus node exporter package
   ansible.builtin.package:
     name: prometheus-node-exporter
     state: present
 
-- name: ensure prometheus node exporter active
+- name: Ensure prometheus node exporter active
   ansible.builtin.service:
     name: prometheus-node-exporter
     enabled: true
