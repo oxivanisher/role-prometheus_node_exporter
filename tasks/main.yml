@@ -9,3 +9,4 @@
   ansible.builtin.service:
     name: prometheus-node-exporter
     enabled: true
+  ignore_errors: "{{ ansible_check_mode }}"
